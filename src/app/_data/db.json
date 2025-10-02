@@ -1,0 +1,20 @@
+
+
+{
+    "contacts":[
+        {
+            "id" : "1",
+            "name" : "tuf",
+            "email" : "tuf@test.com",
+            "userId" : "1"
+        }
+    ],
+    "users":[
+        {
+            "id" : "1",
+            "name" : "uttam",
+            "email" : "uttam@gmail.com",
+            "password" : "12345"
+        }
+    ]
+}
