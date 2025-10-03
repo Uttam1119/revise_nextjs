@@ -1,8 +1,9 @@
 import Link from "next/link";
 import LogOut from "./LogOut";
+import { getSession } from "../lib/session";
 
-const navBar = () => {
-  const session = true;
+const navBar = async () => {
+  const session = await getSession();
   return (
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto p-4 flex justify-between items-center">
