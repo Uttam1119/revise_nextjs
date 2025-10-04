@@ -1,3 +1,4 @@
+import ContactList from "../_components/ContactList";
 import { getContacts } from "../api/contacts";
 import { getSession } from "../lib/session";
 
@@ -29,7 +30,20 @@ const showAllContacts = async () => {
       </div>
     );
   }
-  return <div>ContactPage</div>;
+  return (
+    <div>
+      <div className="flex justify-between items-center mb-6">
+        <h1>Your Contacts</h1>
+        <a
+          href="/contact/new"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
+        >
+          Add Contact
+        </a>
+      </div>
+      <ContactList contacts={contacts} />
+    </div>
+  );
 };
 
 export default showAllContacts;

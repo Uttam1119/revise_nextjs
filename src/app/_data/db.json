@@ -1,18 +1,11 @@
 {
-    "contacts":[
-        {
-            "id" : "1",
-            "name" : "tuf",
-            "email" : "tuf@test.com",
-            "userId" : "2"
-        }
-    ],
-    "users":[
-        {
-            "id" : "1",
-            "name" : "uttam",
-            "email" : "uttam@gmail.com",
-            "password" : "12345"
-        }
-    ]
+  "contacts": [],
+  "users": [
+    {
+      "id": "1",
+      "name": "uttam",
+      "email": "uttam@gmail.com",
+      "password": "12345"
+    }
+  ]
 }
