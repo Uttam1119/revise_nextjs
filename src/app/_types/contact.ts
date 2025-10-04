@@ -1,5 +1,8 @@
-import { UserType } from "./user";
+
 
 export interface ContactType{
-    id:string; userId: UserType
+    id?:string;
+    name?: string;
+    email?: string;
+    userId?: string | undefined
 }

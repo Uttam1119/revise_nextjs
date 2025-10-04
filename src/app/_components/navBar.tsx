@@ -1,6 +1,7 @@
 import Link from "next/link";
-import LogOut from "./LogOut";
 import { getSession } from "../lib/session";
+
+import LogOutButton from "./LogOutButton";
 
 const navBar = async () => {
   const session = await getSession();
@@ -15,7 +16,9 @@ const navBar = async () => {
             <Link href="/contact" className="hover:text-blue-600 mr-8">
               Contacts
             </Link>
-            <LogOut />
+            {/* (// i cannot use onClick here in a server side page as it is a
+            client side functionality) */}
+            <LogOutButton />
           </>
         ) : (
           <>
